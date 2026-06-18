@@ -1,0 +1,57 @@
+import React from 'react';
+
+const About = () => {
+  const containerStyle = {
+    maxWidth: '900px',
+    margin: '0 auto',
+    padding: '40px',
+    background: '#18181b',
+    borderRadius: '16px',
+    border: '1px solid rgba(255, 255, 255, 0.05)',
+    boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
+    textAlign: 'center'
+  };
+
+  const socialBtnStyle = {
+    display: 'inline-block',
+    margin: '10px',
+    padding: '10px 20px',
+    background: '#27272a',
+    color: '#fff',
+    borderRadius: '8px',
+    textDecoration: 'none',
+    transition: 'all 0.3s ease',
+    border: '1px solid rgba(255, 255, 255, 0.1)'
+  };
+
+  return (
+    <div style={containerStyle}>
+      <img
+        src="media/Myimage.png"
+        alt=""
+        style={{ width: '180px', height: '180px', borderRadius: '50%', objectFit: 'cover', border: '4px solid #f97316', marginBottom: '20px', boxShadow: '0 4px 20px rgba(249, 115, 22, 0.4)' }}
+      />
+      <h2 style={{ fontSize: '2.5rem', marginBottom: '10px', color: '#fff' }}>About Me</h2>
+      <h3 style={{ fontSize: '1.5rem', color: '#f97316', marginBottom: '15px' }}> Priyanshu Singh</h3>
+
+      <p style={{ color: '#a1a1aa', fontSize: '1.2rem', lineHeight: '1.8', maxWidth: '600px', margin: '0 auto 30px auto' }}>
+        Hi, I'm Priyanshu Singh, a passionate Full Stack Developer with a strong
+  interest in building modern web applications using the MERN Stack
+  (MongoDB, Express.js, React.js, and Node.js). I enjoy creating responsive,
+  user-friendly, and scalable applications while continuously learning new
+  technologies and improving my development skills.
+  <br /><br />
+  This e-commerce platform was built as part of my journey to gain hands-on
+  experience in authentication, state management, payment integration,
+  order management, and full-stack deployment.
+      </p>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', marginTop: '20px' }}>
+        <a href="https://www.linkedin.com/in/singh-priyanshu-95a093393" target="_blank" rel="noreferrer" style={{ ...socialBtnStyle, background: 'rgba(59, 130, 246, 0.2)', borderColor: '#3b82f6', color: '#3b82f6' }}>💼 LinkedIn</a>
+        <a href="https://github.com/Singh-Priyanshu06" target="_blank" rel="noreferrer" style={socialBtnStyle}> 🐙 GitHub</a>
+      </div>
+    </div>
+  );
+};
+
+export default About;
